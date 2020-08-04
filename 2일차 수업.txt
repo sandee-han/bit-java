@@ -24,5 +24,24 @@ team > show in history
 package : com.javaex.basic
 	VarEx
 
-원격저장소
+원격저장소 업로드
 Team > Remote > Push
+
+원격저장소 다운로드
+git perspective > working tree 우클릭 > import projects > finish
+
+ignore했던것 jdk 다시 불러오기
+* 프로젝트 우클릭 > Build Path > Configure Build Path > Add Library > JRE System Library > next > Apply
+
+다른 사람에게 받은 프로젝트의 경우
+.class 파일이 함께 포함되는 경우가 많음
+-> 바이트코드(컴파일된 상태)
+-> 현재 환경에서 실행 안될 가능성 있음
+-> Project > Clean - 가급적 Build Automatically 옵션을 켜두자
+
+Git 활용 팁
+- 작업이 끝난경우 -> commit & push
+- 작업을 시작할 때 원격 서버의 상태를 먼저 확인
+	Team > fetch from origin (원격 서버의 변경상태)
+	Team >  Pull (실제 변경 내역을 다운로드 & 병합)
+
