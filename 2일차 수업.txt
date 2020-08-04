@@ -1,0 +1,28 @@
+패키지: com.java
+하부패키지: com.java.basic
+	  - HelloWorld.java
+
+File > New > Java Project
+	프로젝트명: javaEx
+
+-local 저장소만들기
+프로젝트 우클릭 > Team > Share Project > Create (저장소 디렉토리 : javaex)
+
+변경 이력을 staging 과 commit
+	- staging : 변경이력을 등록
+	- commit : staging된 이력을 실제 저장소에 기록 ( 프로젝트 우클릭 > Team > commit)
+	- unstaged changes : 등록되지 않은 변경이력
+
+.classpath
+.project		---	eclipse system상 설정 -> push 후 clone시 프로젝트 수행 불가하므로 빼줘야한다   ---   우클릭 후 ignore
+.setting
+
+변경내용 확인
+team > show in history
+
+변수 설정
+package : com.javaex.basic
+	VarEx
+
+원격저장소
+Team > Remote > Push
