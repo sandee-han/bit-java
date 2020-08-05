@@ -8,8 +8,22 @@ public class TypeEx {
 		//intLongTest();
 		//floatDoubletest();
 		//booleanEx();
-		charEx();
+		//charEx();
+		constantEx();
 	}
+	
+	// 상수 연습(Constant)
+	public static void constantEx() {
+		// 변하지 않는 데이터
+		// final을 선언, 상수 식별자는 전부 대문자, 여러 단어일 경우 _로 구분
+		final double PI  = 3.14159;
+		final int SPEED_LIMIT = 110;
+		
+		System.out.println("PI = " + PI + ", 제한속도 = " + SPEED_LIMIT);
+		
+	}
+	
+	
 	
 	// boolean 자료형 연습
 	public static void booleanEx() {
@@ -30,7 +44,7 @@ public class TypeEx {
 
 	}
 	
-	//char 자료형 연습
+// 		char 자료형 연습
 	public static void charEx() {
 		// 2byte(부호 없음)
 		// 유니코드 한 글자의 수치화된 코드
