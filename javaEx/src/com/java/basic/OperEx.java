@@ -14,7 +14,7 @@ public class OperEx {
 		// 사칙연산 : +, -, *, /
 		int a = 7;
 		int b = 3;
-		
+		int i;
 		System.out.println("7 / 3 의 몫: " + (7 / 3));
 		// int / int -> int(몫)
 		System.out.println("7 / 3 의 나머지: " + (7 % 3));
