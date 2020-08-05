@@ -16,10 +16,14 @@ public class TypeEx {
 	public static void constantEx() {
 		// 변하지 않는 데이터
 		// final을 선언, 상수 식별자는 전부 대문자, 여러 단어일 경우 _로 구분
+		// 장점
+		// 1. 코드의 가독성 ↑
+		// 2. 코드 유지 보수 ↑
 		final double PI  = 3.14159;
 		final int SPEED_LIMIT = 110;
 		
 		System.out.println("PI = " + PI + ", 제한속도 = " + SPEED_LIMIT);
+		
 		
 	}
 	
