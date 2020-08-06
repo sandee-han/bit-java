@@ -6,9 +6,67 @@ public class OperEx {
 	public static void main(String[] args) {
 		// arithOper();
 		// incDecOper();
-		logicalOper();
+		//logicalOper();
+		//bitOper();
+		conditionalOper();
 	}
 
+	// 3항 연산자
+	public static void conditionalOper() {
+		// 논리비교 ? 참인 경우 : 거짓인 경우
+		// 장점: 간단한 값의 제어, 코드 가독성을 높일 수 있다
+		int a = 10;
+		// a가 짝수면 "짝수", 아니면 "홀수" 문자열
+		String message = a % 2 == 0 ? "even" : "odd";
+		System.out.println("Is a even or odd? >> " + message);
+		
+		int score = 85;
+		// 점수가 80 이상이면 Good
+		// 점수가 50점 이상이면 Pass
+		// 그렇지 않으면 Fail
+		message = score >= 80 ? "Good" : score >= 50 ? "Pass" : "Fail";
+		// 3항 연산자 중첩이 가능, 비추천 (if문 사용할 것)
+		System.out.println("시험결과: " + message);
+	}
+	
+	
+	
+	
+	// 비트 연산자
+	public static void bitOper() {
+		// and (&), or (|), not(~)
+		// 정수형 데이터를 비트 단위로 제어하는 연산자
+		byte b1 = 0b1101;
+		byte b2 = 0b0111;
+		
+		int result = b1 & b2; // bit and 연산
+		System.out.println("bit and 연산 >> " + (Integer.toBinaryString(result)));
+		
+		result = b1 | b2; // bit or 연산
+		System.out.println("bit or 연산 >> " + (Integer.toBinaryString(result)));
+
+		result = ~b1; // bit not 연산
+		System.out.println("bit not 연산 >> " + (Integer.toBinaryString(result)));
+		System.out.println(result);
+		
+		// 비트 시프트
+		//		<< : 비트를 왼쪽으로 이동 (정수형 2의 배수의 곱)
+		//		>> : 비트를 오른쪽으로 이동 (정수형 2의 배수의 나눗셈)
+
+		int val = 1;
+		System.out.println("val : " + val);
+		// 왼쪽으로 1비트 이동
+		System.out.println("val << 1 : " + Integer.toBinaryString(val << 1));
+		
+		int val2 = 0b100;
+		System.out.println("val2 : " + Integer.toBinaryString(val2));
+		// 오른쪽으로 2비트 이동
+		System.out.println("val2 >> 2 : " + Integer.toBinaryString(val2 >> 2));
+
+
+	}
+	
+	
 	// 비교, 논리 연산
 	public static void logicalOper() {
 		// 비교 연산자 >, >=, <, <=, ==, !=
