@@ -37,15 +37,17 @@ public class Problem01 {
 	public static void quiz3() {
 		for(int i = 1; i <= 9; i++) {
 			for(int j = 2; j<=9; j++) {
-				System.out.print(j + "*"+i+"="+(j*i)+"  ");
+				System.out.print(j + "*"+i+"="+(j*i)+"\t");
 			}
 			System.out.println();
 		}
 		
 	}
 	
-	public static void name() {
-		
+	public static void quiz4() {
+		for(int i = 1; i<=10; i++) {
+		//	for(int j = 1; j<=)
+		}
 	}
 	
 	
