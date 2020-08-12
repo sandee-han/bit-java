@@ -13,7 +13,7 @@ public class Problem01 {
 //		System.out.println("------------------------");
 //		quiz4();
 //		System.out.println("------------------------");
-
+		quiz5();
 	}
 
 	public static void quiz1() {
@@ -60,7 +60,32 @@ public class Problem01 {
 	}
 	
 	public static void quiz5() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		System.out.print("숫자: ");
+		int num1 = scanner.nextInt();
+		System.out.print("숫자: ");
+		int num2 = scanner.nextInt();		
+		System.out.print("숫자: ");
+		int num3 = scanner.nextInt();		
+		System.out.print("숫자: ");
+		int num4 = scanner.nextInt();		
+		System.out.print("숫자: ");
+		int num5 = scanner.nextInt();	
 		
+		if(num1 >= num2) {
+			num2 = num1;
+		}
+		if(num2 >= num3) {
+			num3 = num2;
+		}
+		if(num3 >= num4) {
+			num4 = num3;
+		}
+		if(num4 >= num5) {
+			num5 = num4;
+		}
+		System.out.printf("최대값은 %d입니다.", num5);
 	}
 	
 	
