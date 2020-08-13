@@ -2,7 +2,7 @@ package com.java.basic;
 
 import java.util.Scanner;
 
-public class Problem01 {
+public class Practice01_1 {
 
 	public static void main(String[] args) {
 //		quiz1();
