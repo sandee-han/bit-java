@@ -50,8 +50,6 @@ public class ColorPoint extends Point {
 		
 	}
 	
-	
-	
 }
 
 
