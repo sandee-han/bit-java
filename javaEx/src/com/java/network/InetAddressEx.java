@@ -22,6 +22,7 @@ public class InetAddressEx {
 			InetAddress[] addrs = InetAddress.getAllByName(hostname);
 			for(InetAddress remote: addrs) {
 				System.out.println(hostname + ": " + remote.getHostAddress());
+				
 			}
 		} catch(UnknownHostException e) {
 			e.printStackTrace();
